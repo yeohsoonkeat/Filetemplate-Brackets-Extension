@@ -1,8 +1,11 @@
 # FileTemplates
 Just a shortcut template for files
 
-Press Ctrl + H to make a new file with .html extention with a basic template
+Press Ctrl + H to make a new file with .html extension with a basic template
 
-Press Ctrl + P to make a new file with .php extention with basic php template
+Press Ctrl + P to make a new file with .php extension with basic php template
 
-Other extension is still not available
+Press Ctrl + Shift + V to make a new file with .html extension with vue basic template
+
+Press Ctrl + Shift + A to make a new file with .html extension wiht basic ajax template
+

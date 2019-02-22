@@ -1,7 +1,7 @@
 {
-    "name": "file-template",
+    "name": "file-templates",
     "title": "New File Templates",
-    "description": "Create a new html, php, vue.js, ajax-html with basic formats",
+    "description": "Create a new html, php, vue, ajax-html with basic formats using shortcut keys",
     "homepage": "https://github.com/yeohsoonkeat/Filetemplate",
     "version": "1.0.0",
     "author": "Yeoh Soon Keat",
@@ -10,5 +10,5 @@
         "brackets": ">=0.34.0"
     },
     
-    "keywords": ["vue", "ajax", "template", "html", "cdn", "generate", "starter", "skeleton", "file"]
+    "keywords": ["vue", "ajax", "template", "html", "cdn", "generate", "starter", "skeleton", "file", "php"]
 }
