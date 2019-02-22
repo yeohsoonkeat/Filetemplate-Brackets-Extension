@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Keat </title>
+        <script type="text/javascript">
+            
+            var req = new XMLHttpRequest();
+            req.onreadystatechange = function(){
+                if (this.readyState == 4){
+                    if (this.status == 200){
+                        //excecute when the request is a success
+                    }
+                    else if (this.status == 404){
+                        //exceute when the the content that are requested is not found
+                    }
+                }
+            }
+            
+            //req.open('GET','Destination', true/false);
+            //req.send();
+            
+            //req.open('POST','Destination', true/false);
+            //req.send('string');
+        </script>
+    </head>
+    
+    <body>
+        
+        
+        
+    </body>
+</html>
