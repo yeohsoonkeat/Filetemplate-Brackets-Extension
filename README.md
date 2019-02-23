@@ -9,3 +9,8 @@ Press Ctrl + Shift + V to make a new file with .html extension with vue basic te
 
 Press Ctrl + Shift + A to make a new file with .html extension wiht basic ajax template
 
+
+#Extension Installation
+
+
+
