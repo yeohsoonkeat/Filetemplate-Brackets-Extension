@@ -3,7 +3,7 @@
     "title": "New File Templates",
     "description": "Create a new html, php, vue, ajax-html with basic formats using shortcut keys",
     "homepage": "https://github.com/yeohsoonkeat/Filetemplate",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Yeoh Soon Keat",
     "license": "MIT",
     "engines": {
