@@ -26,7 +26,7 @@ define(function (require, exports, module) {
             doc = DocumentManager.createUntitledDocument(docIndex++, defaultExtension);
 
 		MainViewManager._edit(MainViewManager.ACTIVE_PANE, doc);
-		templateHandler(HTMLTemplate);
+		templateHandler(ajaxTemplate);
 		return new $.Deferred().resolve(doc).promise();
 	}
     
@@ -66,7 +66,6 @@ define(function (require, exports, module) {
     menu.addMenuItem(menuID1, undefined, Menus.AFTER, Commands.FILE_NEW_UNTITLED);
     KeyBindingManager.addBinding(menuID1, "Ctrl-P", "mac");
     KeyBindingManager.addBinding(menuID1, "Ctrl-P", "win");
-    KeyBindingManager.addBinding(menuID2, "Ctrl-P", "linux");
     
     var menuID2 = "yeohsoonkeat.vueTemplate";
     
@@ -74,7 +73,6 @@ define(function (require, exports, module) {
     menu.addMenuItem(menuID2, undefined, Menus.AFTER, Commands.FILE_NEW_UNTITLED);
     KeyBindingManager.addBinding(menuID2, "Ctrl-Shift-V", "mac");
     KeyBindingManager.addBinding(menuID2, "Ctrl-Shift-V", "win");
-    KeyBindingManager.addBinding(menuID2, "Ctrl-Shift-V", "linux");
     
     var menuID3 = "yeohsoonkeat.ajaxTemplate";
     
@@ -82,13 +80,11 @@ define(function (require, exports, module) {
     menu.addMenuItem(menuID3, undefined, Menus.AFTER, Commands.FILE_NEW_UNTITLED);
     KeyBindingManager.addBinding(menuID3, "Ctrl-Shift-A", "mac");
     KeyBindingManager.addBinding(menuID3, "Ctrl-Shift-A", "win");
-    KeyBindingManager.addBinding(menuID2, "Ctrl-Shift-A", "linux");
     
     var menuID4 = "yeohsoonkeat.htmlTemplate";
     
 	CommandManager.register(menuLabel, menuID4, newHTMLHandle);
 	menu.addMenuItem(menuID4, undefined, Menus.AFTER, Commands.FILE_NEW_UNTITLED);
-    KeyBindingManager.addBinding(menuID4, "Ctrl-H", "mac");
-    KeyBindingManager.addBinding(menuID4, "Ctrl-H", "win");
-    KeyBindingManager.addBinding(menuID2, "Ctrl-Shift-N", "linux");
+    KeyBindingManager.addBinding(menuID4, "Ctrl-Shift-N", "mac");
+    KeyBindingManager.addBinding(menuID4, "Ctrl-Shift-N", "win");
 });
