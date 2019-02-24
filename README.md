@@ -1,7 +1,7 @@
 # FileTemplates
 Just a shortcut template for files
 
-Press Ctrl + H to make a new file with .html extension with a basic template
+Press Ctrl + H to make a new file with .html extension with a basic template or Ctrl + Shift + N for Linux
 
 Press Ctrl + P to make a new file with .php extension with basic php template
 

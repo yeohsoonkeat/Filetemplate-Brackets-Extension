@@ -1,4 +1,4 @@
 <?php
-    $k = $_REQUEST['k'];
-    echo "$k";
+    $q = $_REQUEST['q'];
+    echo "$q";
 ?>
