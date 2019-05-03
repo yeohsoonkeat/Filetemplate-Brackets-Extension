@@ -7,13 +7,13 @@
         <title> Keat </title>
         <script type="text/javascript">
             
-            var req = new XMLHttpRequest();
-            req.onreadystatechange = function(){
+            let req = new XMLHttpRequest();
+            req.onreadystatechange = function() {
                 if (this.readyState == 4){
-                    if (this.status == 200){
+                    if (this.status == 200) {
                         //excecute when the request is a success
                     }
-                    else if (this.status == 404){
+                    else if (this.status == 404) {
                         //exceute when the the content that are requested is not found
                     }
                 }
