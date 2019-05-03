@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
     "use strict";
     
-	var docIndex = 1,
+	const docIndex = 1,
 		DocumentManager = brackets.getModule("document/DocumentManager"),
 		Commands = brackets.getModule("command/Commands"),
 		CommandManager = brackets.getModule("command/CommandManager"),
@@ -15,14 +15,14 @@ define(function (require, exports, module) {
         PHPTemplate = require("text!templates/basicphp.php");
     
     function templateHandler(template) {
-        var editor = EditorManager.getFocusedEditor();
+        let editor = EditorManager.getFocusedEditor();
         if (editor) {
             var insertionPos = editor.getCursorPos();
             editor.document.replaceRange(template, insertionPos);
         }
     }
     function newAjaxHandle() {
-		var defaultExtension = ".html",
+		let defaultExtension = ".html",
             doc = DocumentManager.createUntitledDocument(docIndex++, defaultExtension);
 
 		MainViewManager._edit(MainViewManager.ACTIVE_PANE, doc);
@@ -31,7 +31,7 @@ define(function (require, exports, module) {
 	}
     
      function newPHPHandle() {
-		var defaultExtension = ".php",
+		let defaultExtension = ".php",
             doc = DocumentManager.createUntitledDocument(docIndex++, defaultExtension);
 
 		MainViewManager._edit(MainViewManager.ACTIVE_PANE, doc);
@@ -40,7 +40,7 @@ define(function (require, exports, module) {
 	}
     
     function newVueHandle() {
-		var defaultExtension = ".html",
+		let defaultExtension = ".html",
             doc = DocumentManager.createUntitledDocument(docIndex++, defaultExtension);
 
 		MainViewManager._edit(MainViewManager.ACTIVE_PANE, doc);
@@ -49,7 +49,7 @@ define(function (require, exports, module) {
 	}
     
     function newHTMLHandle() {
-		var defaultExtension = ".html",
+		let defaultExtension = ".html",
             doc = DocumentManager.createUntitledDocument(docIndex++, defaultExtension);
 
 		MainViewManager._edit(MainViewManager.ACTIVE_PANE, doc);
@@ -57,31 +57,31 @@ define(function (require, exports, module) {
 		return new $.Deferred().resolve(doc).promise();
 	}
     
-    var menuLabel = "fileTemplate";
-    var menu = Menus.getMenu(Menus.AppMenuBar.FILE_MENU);
+    let menuLabel = "fileTemplate";
+    let menu = Menus.getMenu(Menus.AppMenuBar.FILE_MENU);
     
-    var menuID1 = "yeohsoonkeat.phpTemplate";
+    let menuID1 = "yeohsoonkeat.phpTemplate";
     
     CommandManager.register(menuLabel, menuID1, newPHPHandle);
     menu.addMenuItem(menuID1, undefined, Menus.AFTER, Commands.FILE_NEW_UNTITLED);
     KeyBindingManager.addBinding(menuID1, "Ctrl-P", "mac");
     KeyBindingManager.addBinding(menuID1, "Ctrl-P", "win");
     
-    var menuID2 = "yeohsoonkeat.vueTemplate";
+    let menuID2 = "yeohsoonkeat.vueTemplate";
     
     CommandManager.register(menuLabel, menuID2, newVueHandle);
     menu.addMenuItem(menuID2, undefined, Menus.AFTER, Commands.FILE_NEW_UNTITLED);
     KeyBindingManager.addBinding(menuID2, "Ctrl-Shift-V", "mac");
     KeyBindingManager.addBinding(menuID2, "Ctrl-Shift-V", "win");
     
-    var menuID3 = "yeohsoonkeat.ajaxTemplate";
+    let menuID3 = "yeohsoonkeat.ajaxTemplate";
     
     CommandManager.register(menuLabel, menuID3, newAjaxHandle);
     menu.addMenuItem(menuID3, undefined, Menus.AFTER, Commands.FILE_NEW_UNTITLED);
     KeyBindingManager.addBinding(menuID3, "Ctrl-Shift-A", "mac");
     KeyBindingManager.addBinding(menuID3, "Ctrl-Shift-A", "win");
     
-    var menuID4 = "yeohsoonkeat.htmlTemplate";
+    let menuID4 = "yeohsoonkeat.htmlTemplate";
     
 	CommandManager.register(menuLabel, menuID4, newHTMLHandle);
 	menu.addMenuItem(menuID4, undefined, Menus.AFTER, Commands.FILE_NEW_UNTITLED);
