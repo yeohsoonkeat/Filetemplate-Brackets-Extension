@@ -25,7 +25,7 @@ Press Ctrl + Shift + A to make a new file with .html extension with a basic AJAX
 
 ## Second choice:
 
-1. Download the zip folder from the Releases Page
+1. Download the "file-templates.zip" folder
 
 1. Extract that folder
 
