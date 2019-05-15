@@ -1,35 +1,37 @@
-## FileTemplates
+# FileTemplates
 Just a shortcut template for files
 
-Press Ctrl + Shift + N to make a new file with .html extension with a basic template
+Press Ctrl + Shift + N to make a new file with .html extension with a basic HTML template
 
-Press Ctrl + P to make a new file with .php extension with basic php template
+Press Ctrl + P to make a new file with .php extension with a basic PHP template
 
-Press Ctrl + Shift + V to make a new file with .html extension with vue basic template
+Press Ctrl + Shift + V to make a new file with .html extension with a basic Vue.js template
 
-Press Ctrl + Shift + A to make a new file with .html extension wiht basic ajax template
+Press Ctrl + Shift + A to make a new file with .html extension with a basic AJAX template
 
-## Step How to install extention
+# How to install
 
-# First choice:
+## First choice:
 
--Step1 : First you need to have Brackets
+1. You need to have Brackets
 
--Step2 : Open the Brackets and go to the Extension Manager 
+1. Open Brackets and go to the Extension Manager 
 
--Step3 : Search New File Templates
+1. Search "New File Templates"
 
--Step4 : Install that extension so you will be able to use that shortcut function
+1. Install that extension
 
-# Second choice:
+1. You are able to use the shortcut functions
 
--Step1 : Download the file file-templates.zip 
+## Second choice:
 
--Step2 : Extract that file
+1. Download the "file-templates.zip" folder
 
--Step3 : Copy that file into the extension Brackets file in your Brackets installation file
+1. Extract that folder
 
--Step4 : After that you will be avaialbe to use that shortcut function. 
+1. Copy that file into the Extensions folder in your Brackets installation directory
+
+1. After that you will be able to use that shortcut function. 
 
 
 
